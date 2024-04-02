@@ -121,6 +121,7 @@ sensor:
           send_every: 1
           send_first_at: 1
           quantile: .9
+      - delta: 40
       - lambda: |-
           if (x <= 0.1) {
             return 0.0;
