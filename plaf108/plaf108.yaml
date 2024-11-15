@@ -38,7 +38,9 @@ binary_sensor:
   - platform: gpio
     pin:
       number: GPIO1
-      mode: INPUT_PULLUP
+      mode: 
+        pullup: true
+        input:  true
     name: "GPIO2"
 
 
@@ -92,6 +94,7 @@ binary_sensor:
       number: GPIO19
       mode: 
         pullup: true
+        input: true
     name: Reset Button
 
 #I (530) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0  
